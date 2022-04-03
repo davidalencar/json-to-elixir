@@ -1,1 +1,38 @@
-Hello World
+<html>
+	<head>
+		<title>JSON-to-Elixir: Convert JSON to Elixir struct instantly</title>
+		<meta charset="UTF-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/js/jsonex.js"></script>
+        <script src="./assets/js/common.js"></script>
+        <link rel="stylesheet" href="./assets/css/common.css">
+
+
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th style="width: 45%;">JSON</th>
+				<th style="width: 10%; font-size: 22px;">&#8594;</th>
+				<th style="width: 45%;">Go <label><input type="checkbox" id="inline" checked>Inline type definitions</label> <span class="copy" id="copy-btn">Copy to clipboard</span></th>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td style="width: 50%;">
+					<div id="input" contenteditable></div>
+				</td>
+				<td style="width: 50%;">
+					<div id="output"></div>
+				</td>
+			</tr>
+		</table>
+
+		<footer>
+			&copy; 2015 Matt Holt
+			<br>
+			The Go Gopher artwork is a derivative of that by Renee French.
+		</footer>
+	</body>
+</html>
