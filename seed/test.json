@@ -1,0 +1,33 @@
+{
+    "name": "Tony Stark",
+    "email": "tonystarkk@avengers.com",
+    "code": "MY_CUSTOMER_001",
+    "document": "93095135270",
+    "type": "individual",
+    "document_type": "CPF",
+    "gender": "male",
+    "address": {
+    	"line_1": "375, Av. General Justo, Centro",
+    	"line_2": "8º andar",
+    	"zip_code": "20021130",
+    	"city": "Rio de Janeiro",
+    	"state": "RJ",
+    	"country": "BR"
+    },
+    "birthdate": "05/03/1984",    
+    "phones": {
+      "home_phone": {
+        "country_code": "55",
+        "area_code": "21",
+        "number": "000000000"
+      },
+      "mobile_phone": {
+        "country_code": "55",
+        "area_code": "21",
+        "number": "000000000"
+      }
+    },
+    "metadata": {
+      "company": "Avengers"
+    }
+}
