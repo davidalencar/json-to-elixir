@@ -14,8 +14,6 @@ $(function()
 			return;
 		}
 
-        console.log(input)
-        
 		let output = jsonToElixir(input, "");
 
 		if (output.error)

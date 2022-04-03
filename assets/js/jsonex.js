@@ -1,9 +1,9 @@
 function jsonToElixir(json, root_name = '') {
 
 
-    var data = JSON.parse(json)
+    var json = JSON.parse(json)
 
-    return get_json_structures(data, root_name).map((structure) => {
+    return get_json_structures(json, root_name).map((structure) => {
         return  write_a_elx_structure(structure)
     }).reduce((val1, val2) => val1 + '\n\n' + val2)  
 
@@ -15,11 +15,10 @@ function jsonToElixir(json, root_name = '') {
         }
 
         Object.keys(data).map((key) => {
-            if (typeof data[key] == "object") {
+            if (typeof data[key] == "object" && data[key] != null) {
                 get_json_structures(data[key], key, structures)
-            } else {
-                structure.fields.push(key)
             }
+            structure.fields.push(key)
         })
 
         structures.push(structure)
