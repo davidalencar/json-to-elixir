@@ -1,7 +1,7 @@
 $(function()
 {
 	const emptyInputMsg = "Paste JSON here";
-	const emptyOutputMsg = "Go will appear here";
+	const emptyOutputMsg = "Elixir  will appear here";
 	const formattedEmptyInputMsg = '<span style="color: #777;">'+emptyInputMsg+'</span>';
 	const formattedEmptyOutputMsg = '<span style="color: #777;">'+emptyOutputMsg+'</span>';
 
